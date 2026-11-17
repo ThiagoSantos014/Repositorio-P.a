@@ -3,8 +3,9 @@ var numeros = [5, -3, 0, 8, -2, 0, 10, -7, 4, -1];
 var positivos = 0;
 var negativos = 0;
 var zeros = 0;
+var i = 0;
 
-for (var i = 0; i < 10; i++) {
+do {
   if (numeros[i] > 0) {
     positivos++;
   } else if (numeros[i] < 0) {
@@ -12,7 +13,9 @@ for (var i = 0; i < 10; i++) {
   } else {
     zeros++;
   }
-}
+
+  i++;
+} while (i < 10);
 
 document.write("Positivos: " + positivos + "<br>");
 document.write("Negativos: " + negativos + "<br>");
