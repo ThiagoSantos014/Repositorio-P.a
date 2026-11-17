@@ -3,12 +3,13 @@ var notas = [];
 var soma = 0;
 var aprovados = 0;
 var reprovados = 0;
-var resultado = "Notas: ";
+
+document.write("Notas:<br>");
 
 for (var i = 0; i < 10; i++) {
   notas[i] = Number(prompt("Digite a " + (i + 1) + "ª nota:"));
-  soma += notas[i];
-  resultado += notas[i] + " ";
+  soma = soma + notas[i];
+  document.write(notas[i] + "<br>");
 
   if (notas[i] >= 6) {
     aprovados++;
@@ -17,8 +18,7 @@ for (var i = 0; i < 10; i++) {
   }
 }
 
-resultado += "\nMédia: " + (soma / 10);
-resultado += "\nAprovados: " + aprovados;
-resultado += "\nReprovados: " + reprovados;
-
-alert(resultado);
+document.write("Média: " + (soma / 10) + "<br>");
+document.write("Aprovados: " + aprovados + "<br>");
+document.write("Reprovados: " + reprovados);
+</script>
