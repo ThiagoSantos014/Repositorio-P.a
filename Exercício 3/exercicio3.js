@@ -1,11 +1,13 @@
-// Exercício 3 - Média dos valores
 var notas = [];
 var soma = 0;
+var media = 0;
 
-for (var i = 0; i < 8; i++) {
-  notas[i] = Number(prompt("Digite a " + (i + 1) + "ª nota:"));
-  soma += notas[i];
+function executar() {
+  for (var i = 0; i < 8; i++) {
+    notas[i] = Number(document.getElementById("n" + i).value);
+    soma += notas[i];
+  }
+
+  media = soma / 8;
+  document.write("A média da turma é: " + media);
 }
-
-var media = soma / 8;
-alert("A média das notas é: " + media);
