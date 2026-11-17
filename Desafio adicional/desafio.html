@@ -1,9 +1,11 @@
 <script>
 var numeros = [30, 10, 50, 20, 80, 40, 70, 60, 100, 90];
 var auxiliar;
+var i = 0;
+var j = 0;
 
-for (var i = 0; i < 10; i++) {
-  for (var j = 0; j < 9; j++) {
+for (i = 0; i < 10; i++) {
+  for (j = 0; j < 9; j++) {
     if (numeros[j] > numeros[j + 1]) {
       auxiliar = numeros[j];
       numeros[j] = numeros[j + 1];
@@ -12,7 +14,7 @@ for (var i = 0; i < 10; i++) {
   }
 }
 
-for (var i = 0; i < 10; i++) {
+for (i = 0; i < 10; i++) {
   document.write(numeros[i] + "<br>");
 }
 </script>
