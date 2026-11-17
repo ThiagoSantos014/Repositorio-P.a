@@ -2,17 +2,17 @@
 var numeros = [12, 5, 30, 8, 17, 2, 45, 10, 6, 21];
 var maior = numeros[0];
 var menor = numeros[0];
+var i = 1;
 
-for (var i = 1; i < 10; i++) {
+for (i = 1; i < 10; i++) {
   if (numeros[i] > maior) {
     maior = numeros[i];
   }
-
   if (numeros[i] < menor) {
     menor = numeros[i];
   }
 }
 
-document.write("Maior número: " + maior + "<br>");
-document.write("Menor número: " + menor);
+document.write("Maior: " + maior + "<br>");
+document.write("Menor: " + menor);
 </script>
