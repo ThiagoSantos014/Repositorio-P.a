@@ -1,27 +1,22 @@
 <script>
-<script>
 var numeros = [];
 var busca;
 var encontrou = false;
 
-function executar() {
-  for (var i = 0; i < 10; i++) {
-    numeros[i] = Number(document.getElementById("n" + i).value);
-  }
+for (var i = 0; i < 10; i++) {
+  numeros[i] = Number(prompt("Digite o " + (i + 1) + "º número:"));
+}
 
-  busca = Number(document.getElementById("busca").value);
+busca = Number(prompt("Digite o número que deseja procurar:"));
 
-  for (var i = 0; i < 10; i++) {
-    if (numeros[i] == busca) {
-      encontrou = true;
-    }
-  }
-
-  if (encontrou == true) {
-    document.write("O número foi encontrado.");
-  } else {
-    document.write("O número não foi encontrado.");
+for (var i = 0; i < 10; i++) {
+  if (numeros[i] == busca) {
+    encontrou = true;
   }
 }
-</script>
-</script>
+
+if (encontrou) {
+  alert("O número foi encontrado.");
+} else {
+  alert("O número não foi encontrado.");
+}
