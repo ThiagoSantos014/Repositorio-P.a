@@ -1,8 +1,22 @@
 <script>
-var numeros = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40];
-var busca = 20;
+var numeros = [];
+var busca;
+var encontrou = false;
+var i = 0;
 
-if (numeros[0] == busca || numeros[1] == busca || numeros[2] == busca || numeros[3] == busca || numeros[4] == busca || numeros[5] == busca || numeros[6] == busca || numeros[7] == busca || numeros[8] == busca || numeros[9] == busca) {
+for (i = 0; i < 10; i++) {
+  numeros[i] = parseInt(prompt("Digite um número:"));
+}
+
+busca = parseInt(prompt("Qual número deseja procurar?"));
+
+for (i = 0; i < 10; i++) {
+  if (numeros[i] == busca) {
+    encontrou = true;
+  }
+}
+
+if (encontrou == true) {
   document.write("Número encontrado");
 } else {
   document.write("Número não encontrado");
