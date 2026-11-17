@@ -1,12 +1,10 @@
 <script>
-var numeros = [];
+var numeros = [5, -3, 0, 8, -2, 0, 10, -7, 4, -1];
 var positivos = 0;
 var negativos = 0;
 var zeros = 0;
 
 for (var i = 0; i < 10; i++) {
-  numeros[i] = Number(prompt("Digite o " + (i + 1) + "º número:"));
-
   if (numeros[i] > 0) {
     positivos++;
   } else if (numeros[i] < 0) {
