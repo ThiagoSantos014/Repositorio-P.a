@@ -1,0 +1,16 @@
+var vetor1 = [];
+var vetor2 = [];
+var soma = [];
+
+function executar() {
+  for (var i = 0; i < 5; i++) {
+    vetor1[i] = Number(document.getElementById("a" + i).value);
+    vetor2[i] = Number(document.getElementById("b" + i).value);
+    soma[i] = vetor1[i] + vetor2[i];
+  }
+
+  document.write("Soma dos vetores:<br>");
+  for (var i = 0; i < 5; i++) {
+    document.write(soma[i] + "<br>");
+  }
+}
