@@ -1,9 +1,11 @@
 <script>
 var numeros = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 var soma = 0;
+var i = 0;
 
-for (var i = 0; i < 10; i++) {
+while (i < 10) {
   soma = soma + numeros[i];
+  i++;
 }
 
 document.write("Soma: " + soma);
