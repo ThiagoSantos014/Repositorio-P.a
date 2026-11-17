@@ -1,28 +1,27 @@
-// Exercício 10 - Controle de notas de uma turma
 var notas = [];
 var soma = 0;
+var media = 0;
 var aprovados = 0;
 var reprovados = 0;
 
-for (var i = 0; i < 10; i++) {
-  notas[i] = Number(prompt("Digite a nota do " + (i + 1) + "º aluno:"));
-  soma += notas[i];
+function executar() {
+  for (var i = 0; i < 10; i++) {
+    notas[i] = Number(document.getElementById("n" + i).value);
+    soma += notas[i];
 
-  if (notas[i] >= 6) {
-    aprovados++;
-  } else {
-    reprovados++;
+    if (notas[i] >= 6) {
+      aprovados++;
+    } else {
+      reprovados++;
+    }
   }
+
+  media = soma / 10;
+  document.write("Notas: ");
+  for (var i = 0; i < 10; i++) {
+    document.write(notas[i] + " ");
+  }
+  document.write("<br>Média: " + media);
+  document.write("<br>Aprovados: " + aprovados);
+  document.write("<br>Reprovados: " + reprovados);
 }
-
-var media = soma / 10;
-var resultado = "Média da turma: " + media;
-resultado += "\nAprovados: " + aprovados;
-resultado += "\nReprovados: " + reprovados;
-resultado += "\nNotas dos alunos:\n";
-
-for (var i = 0; i < 10; i++) {
-  resultado += notas[i] + "\n";
-}
-
-alert(resultado);
