@@ -1,13 +1,14 @@
-// Exercício 1 - Cadastro de números
 var numeros = [];
-var resultado = "Números digitados:\n";
+var resultado = "Números digitados:<br>";
 
-for (var i = 0; i < 10; i++) {
-  numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número inteiro:"));
+function executar() {
+  for (var i = 0; i < 10; i++) {
+    numeros[i] = Number(document.getElementById("n" + i).value);
+  }
+
+  for (var i = 0; i < 10; i++) {
+    resultado += numeros[i] + "<br>";
+  }
+
+  document.write(resultado);
 }
-
-for (var i = 0; i < 10; i++) {
-  resultado += numeros[i] + "\n";
-}
-
-alert(resultado);
