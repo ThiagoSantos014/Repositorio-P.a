@@ -1,20 +1,16 @@
-// Exercício 9 - Comparação entre dois vetores
-var vetorA = [];
-var vetorB = [];
-var vetorC = [];
-var resultado = "Vetor A | Vetor B | Vetor C\n";
+var vetor1 = [];
+var vetor2 = [];
+var soma = [];
 
-for (var i = 0; i < 5; i++) {
-  vetorA[i] = Number(prompt("Digite o " + (i + 1) + "º número do vetor A:"));
+function executar() {
+  for (var i = 0; i < 5; i++) {
+    vetor1[i] = Number(document.getElementById("a" + i).value);
+    vetor2[i] = Number(document.getElementById("b" + i).value);
+    soma[i] = vetor1[i] + vetor2[i];
+  }
+
+  document.write("Soma dos vetores:<br>");
+  for (var i = 0; i < 5; i++) {
+    document.write(soma[i] + "<br>");
+  }
 }
-
-for (var i = 0; i < 5; i++) {
-  vetorB[i] = Number(prompt("Digite o " + (i + 1) + "º número do vetor B:"));
-}
-
-for (var i = 0; i < 5; i++) {
-  vetorC[i] = vetorA[i] + vetorB[i];
-  resultado += vetorA[i] + "       | " + vetorB[i] + "       | " + vetorC[i] + "\n";
-}
-
-alert(resultado);
