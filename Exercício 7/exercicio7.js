@@ -1,13 +1,12 @@
-// Exercício 7 - Vetor em ordem inversa
 var numeros = [];
-var resultado = "Números na ordem inversa:\n";
 
-for (var i = 0; i < 10; i++) {
-  numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número inteiro:"));
+function executar() {
+  for (var i = 0; i < 10; i++) {
+    numeros[i] = Number(document.getElementById("n" + i).value);
+  }
+
+  document.write("Números na ordem inversa:<br>");
+  for (var i = 9; i >= 0; i--) {
+    document.write(numeros[i] + "<br>");
+  }
 }
-
-for (var i = 9; i >= 0; i--) {
-  resultado += numeros[i] + "\n";
-}
-
-alert(resultado);
