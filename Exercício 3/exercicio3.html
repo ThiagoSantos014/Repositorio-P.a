@@ -1,11 +1,11 @@
 <script>
-var notas = [7, 8, 6, 9, 10, 5, 8, 7];
+var notas = [];
 var soma = 0;
 var i = 0;
 
-while (i < 8) {
+for (i = 0; i < 8; i++) {
+  notas[i] = parseFloat(prompt("Digite uma nota:"));
   soma = soma + notas[i];
-  i++;
 }
 
 document.write("Média: " + (soma / 8));
