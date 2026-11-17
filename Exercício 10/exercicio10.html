@@ -1,29 +1,24 @@
 <script>
 var notas = [];
 var soma = 0;
-var media = 0;
 var aprovados = 0;
 var reprovados = 0;
+var resultado = "Notas: ";
 
-function executar() {
-  for (var i = 0; i < 10; i++) {
-    notas[i] = Number(document.getElementById("n" + i).value);
-    soma += notas[i];
+for (var i = 0; i < 10; i++) {
+  notas[i] = Number(prompt("Digite a " + (i + 1) + "ª nota:"));
+  soma += notas[i];
+  resultado += notas[i] + " ";
 
-    if (notas[i] >= 6) {
-      aprovados++;
-    } else {
-      reprovados++;
-    }
+  if (notas[i] >= 6) {
+    aprovados++;
+  } else {
+    reprovados++;
   }
-
-  media = soma / 10;
-  document.write("Notas: ");
-  for (var i = 0; i < 10; i++) {
-    document.write(notas[i] + " ");
-  }
-  document.write("<br>Média: " + media);
-  document.write("<br>Aprovados: " + aprovados);
-  document.write("<br>Reprovados: " + reprovados);
 }
-</script>
+
+resultado += "\nMédia: " + (soma / 10);
+resultado += "\nAprovados: " + aprovados;
+resultado += "\nReprovados: " + reprovados;
+
+alert(resultado);
