@@ -2,14 +2,15 @@
 var numeros = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29];
 var pares = 0;
 var impares = 0;
-var i = 0;
-for (i = 0; i < 10; i++) {
+
+for (var i = 0; i < 10; i++) {
   if (numeros[i] % 2 == 0) {
     pares++;
   } else {
     impares++;
   }
 }
+
 document.write("Pares: " + pares + "<br>");
 document.write("Ímpares: " + impares);
 </script>
