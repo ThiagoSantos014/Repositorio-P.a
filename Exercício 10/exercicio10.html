@@ -3,8 +3,9 @@ var notas = [7, 5, 8, 6, 4, 9, 10, 3, 7, 6];
 var soma = 0;
 var aprovados = 0;
 var reprovados = 0;
+var i = 0;
 
-for (var i = 0; i < 10; i++) {
+for (i = 0; i < 10; i++) {
   soma = soma + notas[i];
   if (notas[i] >= 6) {
     aprovados++;
@@ -17,7 +18,7 @@ document.write("Média: " + (soma / 10) + "<br>");
 document.write("Aprovados: " + aprovados + "<br>");
 document.write("Reprovados: " + reprovados + "<br>");
 
-for (var i = 0; i < 10; i++) {
+for (i = 0; i < 10; i++) {
   document.write(notas[i] + "<br>");
 }
 </script>
