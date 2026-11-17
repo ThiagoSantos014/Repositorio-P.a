@@ -5,7 +5,7 @@ var negativos = 0;
 var zeros = 0;
 var i = 0;
 
-do {
+for (i = 0; i < 10; i++) {
   if (numeros[i] > 0) {
     positivos++;
   } else if (numeros[i] < 0) {
@@ -13,9 +13,7 @@ do {
   } else {
     zeros++;
   }
-
-  i++;
-} while (i < 10);
+}
 
 document.write("Positivos: " + positivos + "<br>");
 document.write("Negativos: " + negativos + "<br>");
