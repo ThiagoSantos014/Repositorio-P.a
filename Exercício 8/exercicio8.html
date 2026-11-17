@@ -1,0 +1,22 @@
+var numeros = [];
+var positivos = 0;
+var negativos = 0;
+var zeros = 0;
+
+function executar() {
+  for (var i = 0; i < 10; i++) {
+    numeros[i] = Number(document.getElementById("n" + i).value);
+
+    if (numeros[i] > 0) {
+      positivos++;
+    } else if (numeros[i] < 0) {
+      negativos++;
+    } else {
+      zeros++;
+    }
+  }
+
+  document.write("Positivos: " + positivos + "<br>");
+  document.write("Negativos: " + negativos + "<br>");
+  document.write("Zeros: " + zeros);
+}
