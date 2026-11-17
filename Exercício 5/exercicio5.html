@@ -3,11 +3,9 @@ var numeros = [];
 var pares = 0;
 var impares = 0;
 var i = 0;
-
 for (i = 0; i < 10; i++) {
   numeros[i] = parseInt(prompt("Digite um número:"));
 }
-
 for (i = 0; i < 10; i++) {
   if (numeros[i] % 2 == 0) {
     pares++;
@@ -15,7 +13,6 @@ for (i = 0; i < 10; i++) {
     impares++;
   }
 }
-
 document.write("Pares: " + pares + "<br>");
 document.write("Ímpares: " + impares);
 </script>
