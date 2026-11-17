@@ -1,0 +1,23 @@
+var numeros = [];
+var busca;
+var encontrou = false;
+
+function executar() {
+  for (var i = 0; i < 10; i++) {
+    numeros[i] = Number(document.getElementById("n" + i).value);
+  }
+
+  busca = Number(document.getElementById("busca").value);
+
+  for (var i = 0; i < 10; i++) {
+    if (numeros[i] == busca) {
+      encontrou = true;
+    }
+  }
+
+  if (encontrou == true) {
+    document.write("O número foi encontrado.");
+  } else {
+    document.write("O número não foi encontrado.");
+  }
+}
