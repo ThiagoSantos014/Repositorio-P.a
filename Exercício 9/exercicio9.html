@@ -2,7 +2,8 @@
 var vetor1 = [];
 var vetor2 = [];
 var soma = [];
-var resultado = "Soma dos vetores:\n";
+
+document.write("Soma dos vetores:<br>");
 
 for (var i = 0; i < 5; i++) {
   vetor1[i] = Number(prompt("Digite o " + (i + 1) + "º número do primeiro vetor:"));
@@ -14,7 +15,6 @@ for (var i = 0; i < 5; i++) {
 
 for (var i = 0; i < 5; i++) {
   soma[i] = vetor1[i] + vetor2[i];
-  resultado += soma[i] + "\n";
+  document.write(soma[i] + "<br>");
 }
-
-alert(resultado);
+</script>
