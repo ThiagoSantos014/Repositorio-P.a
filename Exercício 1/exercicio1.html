@@ -1,10 +1,10 @@
 <script>
 var numeros = [];
-var resultado = "Números digitados:\n";
+
+document.write("Números digitados:<br>");
 
 for (var i = 0; i < 10; i++) {
   numeros[i] = Number(prompt("Digite o " + (i + 1) + "º número:"));
-  resultado += numeros[i] + "\n";
+  document.write(numeros[i] + "<br>");
 }
-
-alert(resultado);
+</script>
