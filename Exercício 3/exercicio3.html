@@ -1,11 +1,10 @@
 <script>
-var notas = [];
+var notas = [7, 8, 6, 9, 10, 5, 8, 7];
 var soma = 0;
 
 for (var i = 0; i < 8; i++) {
-  notas[i] = Number(prompt("Digite a " + (i + 1) + "ª nota:"));
   soma = soma + notas[i];
 }
 
-document.write("A média da turma é: " + (soma / 8));
+document.write("A média das notas é: " + (soma / 8));
 </script>
