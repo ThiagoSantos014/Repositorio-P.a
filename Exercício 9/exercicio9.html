@@ -1,20 +1,20 @@
 <script>
-<script>
 var vetor1 = [];
 var vetor2 = [];
 var soma = [];
+var resultado = "Soma dos vetores:\n";
 
-function executar() {
-  for (var i = 0; i < 5; i++) {
-    vetor1[i] = Number(document.getElementById("a" + i).value);
-    vetor2[i] = Number(document.getElementById("b" + i).value);
-    soma[i] = vetor1[i] + vetor2[i];
-  }
-
-  document.write("Soma dos vetores:<br>");
-  for (var i = 0; i < 5; i++) {
-    document.write(soma[i] + "<br>");
-  }
+for (var i = 0; i < 5; i++) {
+  vetor1[i] = Number(prompt("Digite o " + (i + 1) + "º número do primeiro vetor:"));
 }
-</script>
-</script>
+
+for (var i = 0; i < 5; i++) {
+  vetor2[i] = Number(prompt("Digite o " + (i + 1) + "º número do segundo vetor:"));
+}
+
+for (var i = 0; i < 5; i++) {
+  soma[i] = vetor1[i] + vetor2[i];
+  resultado += soma[i] + "\n";
+}
+
+alert(resultado);
