@@ -4,7 +4,8 @@ var soma = 0;
 
 for (var i = 0; i < 8; i++) {
   notas[i] = Number(prompt("Digite a " + (i + 1) + "ª nota:"));
-  soma += notas[i];
+  soma = soma + notas[i];
 }
 
-alert("A média da turma é: " + (soma / 8));
+document.write("A média da turma é: " + (soma / 8));
+</script>
