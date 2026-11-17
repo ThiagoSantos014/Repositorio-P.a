@@ -1,9 +1,12 @@
 <script>
-var numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+var numeros = [];
 var i = 0;
 
-while (i < 10) {
+for (i = 0; i < 10; i++) {
+  numeros[i] = parseInt(prompt("Digite um número:"));
+}
+
+for (i = 0; i < 10; i++) {
   document.write(numeros[i] + "<br>");
-  i++;
 }
 </script>
