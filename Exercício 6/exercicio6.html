@@ -1,13 +1,7 @@
 <script>
-var numeros = [];
-var busca;
+var numeros = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40];
+var busca = 20;
 var encontrou = false;
-
-for (var i = 0; i < 10; i++) {
-  numeros[i] = Number(prompt("Digite o " + (i + 1) + "º número:"));
-}
-
-busca = Number(prompt("Digite o número que deseja procurar:"));
 
 for (var i = 0; i < 10; i++) {
   if (numeros[i] == busca) {
@@ -16,8 +10,8 @@ for (var i = 0; i < 10; i++) {
 }
 
 if (encontrou) {
-  document.write("O número foi encontrado.");
+  document.write("O número " + busca + " foi encontrado.");
 } else {
-  document.write("O número não foi encontrado.");
+  document.write("O número " + busca + " não foi encontrado.");
 }
 </script>
