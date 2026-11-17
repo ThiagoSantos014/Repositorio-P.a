@@ -1,5 +1,5 @@
 <script>
-var notas = [];
+var notas = [7, 5, 8, 6, 4, 9, 10, 3, 7, 6];
 var soma = 0;
 var aprovados = 0;
 var reprovados = 0;
@@ -7,7 +7,6 @@ var reprovados = 0;
 document.write("Notas:<br>");
 
 for (var i = 0; i < 10; i++) {
-  notas[i] = Number(prompt("Digite a " + (i + 1) + "ª nota:"));
   soma = soma + notas[i];
   document.write(notas[i] + "<br>");
 
