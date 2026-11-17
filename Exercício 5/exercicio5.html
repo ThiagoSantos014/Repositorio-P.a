@@ -1,11 +1,9 @@
 <script>
-var numeros = [];
+var numeros = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29];
 var pares = 0;
 var impares = 0;
 
 for (var i = 0; i < 10; i++) {
-  numeros[i] = Number(prompt("Digite o " + (i + 1) + "º número:"));
-
   if (numeros[i] % 2 == 0) {
     pares++;
   } else {
