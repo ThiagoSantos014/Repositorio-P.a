@@ -1,18 +1,18 @@
-// Exercício 5 - Números pares e ímpares
 var numeros = [];
 var pares = 0;
 var impares = 0;
 
-for (var i = 0; i < 10; i++) {
-  numeros[i] = parseInt(prompt("Digite o " + (i + 1) + "º número inteiro:"));
-}
+function executar() {
+  for (var i = 0; i < 10; i++) {
+    numeros[i] = Number(document.getElementById("n" + i).value);
 
-for (var i = 0; i < 10; i++) {
-  if (numeros[i] % 2 == 0) {
-    pares++;
-  } else {
-    impares++;
+    if (numeros[i] % 2 == 0) {
+      pares++;
+    } else {
+      impares++;
+    }
   }
-}
 
-alert("Quantidade de pares: " + pares + "\nQuantidade de ímpares: " + impares);
+  document.write("Quantidade de pares: " + pares + "<br>");
+  document.write("Quantidade de ímpares: " + impares);
+}
